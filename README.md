@@ -12,5 +12,5 @@ mvn clean package
 
 ## Run
 ```sh
-java -cp target/unit05-1.0.0.jar edu.advanced.unit5.tree.TestTree
+java -cp target/unit06-1.0.0.jar edu.advanced.unit6.sort.SelectionSort
 ```

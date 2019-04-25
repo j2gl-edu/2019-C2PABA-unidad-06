@@ -2,40 +2,44 @@ package edu.advanced.unit6.sort;
 
 public class SelectionSort {
 
+    public static void displayArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ", ");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Selection Sort");
 
-        int menor, indice, n, i, j;
-        n = 20;
-        int A[] = new int[n];
+        int menor, indice, size, i, j;
+        size = 5;
+        int array[] = new int[size];
 
-        System.out.print("Arreglo Original: ");
-        for (i = 0; i < n; i++) {
-            A[i] = (int) Math.round(Math.random() * 1000);
-            System.out.print(A[i] + ", ");
+
+        for (i = 0; i < size; i++) {
+            array[i] = (int) Math.round(Math.random() * 10);
         }
+        System.out.print("Arreglo Original: ");
+        displayArray(array);
 
-        for (i = 0; i < n; i++) {
-            menor = A[i];
+        for (i = 0; i < size; i++) {
+            menor = array[i];
             indice = i;
 
-            for (j = i + 1; j < n; j++) {
-                if (menor > A[j]) {
-                    menor = A[j];
+            for (j = i + 1; j < size; j++) {
+                if (menor > array[j]) {
+                    menor = array[j];
                     indice = j;
                 }
             }
 
-            A[indice] = A[i];
-            A[i] = menor;
-
+            array[indice] = array[i];
+            array[i] = menor;
         }
 
         System.out.println();
         System.out.print("Arreglo Ordenado: ");
-        for (i = 0; i < n; i++) {
-            System.out.print(A[i] + ", ");
-        }
+        displayArray(array);
         System.out.println();
 
     }
