@@ -1,4 +1,4 @@
-# Unit 4 - Constructors and Access Modifiers
+# Unit 6 - Sort Methods
 
 ## Required
 
@@ -13,4 +13,5 @@ mvn clean package
 ## Run
 ```sh
 java -cp target/unit06-1.0.0.jar edu.advanced.unit6.sort.SelectionSort
+java -cp target/unit06-1.0.0.jar edu.advanced.unit6.sort.ShellSort
 ```
