@@ -2,9 +2,9 @@ package edu.advanced.unit6.sort;
 
 public class SelectionSort {
 
-    public static void displayArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + ", ");
+    private static void displayArray(int[] array) {
+        for (int anArray : array) {
+            System.out.print(anArray + ", ");
         }
     }
 
@@ -41,7 +41,6 @@ public class SelectionSort {
         System.out.print("Arreglo Ordenado: ");
         displayArray(array);
         System.out.println();
-
     }
 
 }
